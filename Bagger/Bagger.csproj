@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\background.png" />
+    <None Remove="Resources\Images\eve-right.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AdonisUI" Version="1.17.1" />
+    <PackageReference Include="AdonisUI.ClassicTheme" Version="1.17.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\background.png" />
+    <Resource Include="Resources\Images\eve-right.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BCMakeCert">
+      <HintPath>..\Fiddler\BCMakeCert.dll</HintPath>
+    </Reference>
+    <Reference Include="FiddlerCore">
+      <HintPath>..\Fiddler\FiddlerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.NetworkConnections">
+      <HintPath>..\Fiddler\Telerik.NetworkConnections.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
